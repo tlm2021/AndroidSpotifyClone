@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">SpotifyTM</string>
+    <string name="app_name">Spotify (by Travis Mosley)</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="search_result_artist_image_description">Artist Image</string>
+    <string name="search_result_artist_name_default">Pink Floyd</string>
 </resources>
