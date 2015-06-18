@@ -3,7 +3,7 @@
 <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:clickable="true"
+    android:clickable="false"
     android:divider="#ff1373ff"
     android:gravity="center_vertical">
 
@@ -12,14 +12,14 @@
            android:layout_height="64dp"
            android:id="@+id/list_item_search_result_imageview"
            android:contentDescription="@string/search_result_artist_image_description"
-           android:src="@android:drawable/zoom_plate"
+           android:src="@drawable/ic_people_black_48dp"
            android:padding="8dp" />
 
        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:textAppearance="?android:attr/textAppearanceMedium"
-              android:text="@string/search_result_artist_name_default"
+              android:text="@string/artist_name_default"
               android:id="@+id/list_item_search_result_textview"
            android:gravity="left">
        </TextView>
