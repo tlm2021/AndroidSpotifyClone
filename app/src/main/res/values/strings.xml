@@ -9,4 +9,5 @@
     <string name="artist_name_default">Pink Floyd</string>
     <string name="artist_genre_list_default">Classic Rock, Rock</string>
     <string name="artist_followers_default">123215 Followers</string>
+    <string name="album_name_default">A Momentary Lapse of Reason</string>
 </resources>

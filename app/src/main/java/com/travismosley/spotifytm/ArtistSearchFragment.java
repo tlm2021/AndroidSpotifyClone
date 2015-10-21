@@ -4,7 +4,6 @@ import android.app.Fragment;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.text.Layout;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -16,12 +15,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import kaaes.spotify.webapi.android.SpotifyApi;
@@ -55,7 +52,7 @@ public class ArtistSearchFragment extends Fragment {
         @Override
         public View getView(int position, View convertView, ViewGroup parent){
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View resultView = inflater.inflate(R.layout.list_item_search_result, parent, false);
+            View resultView = inflater.inflate(R.layout.list_item_artist, parent, false);
             TextView nameView = (TextView) resultView.findViewById(R.id.list_item_search_result_textview);
             nameView.setText(artists.get(position).name);
 

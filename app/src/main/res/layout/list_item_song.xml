@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:divider="#ff1373ff"
+    android:gravity="center_vertical">
+
+       <ImageView
+           android:layout_width="64dp"
+           android:layout_height="64dp"
+           android:id="@+id/list_item_song_imageview"
+           android:contentDescription="@string/search_result_artist_image_description"
+           android:src="@drawable/ic_people_black_48dp"
+           android:padding="8dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium"
+                  android:text="@string/artist_name_default"
+                  android:id="@+id/list_item_song_name_textview"
+               android:gravity="left">
+           </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/album_name_default"
+            android:id="@+id/list_item_song_album_textview" />
+    </LinearLayout>
+
+</LinearLayout>
