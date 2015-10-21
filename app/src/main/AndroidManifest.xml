@@ -22,7 +22,6 @@
             android:name=".ArtistDetailActivity"
             android:label="@string/artist_detail_activity_label"
             android:parentActivityName=".MainActivity" >
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
