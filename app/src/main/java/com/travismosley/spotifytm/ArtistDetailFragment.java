@@ -1,13 +1,17 @@
 package com.travismosley.spotifytm;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
@@ -47,7 +51,14 @@ public class ArtistDetailFragment extends Fragment {
         followerView.setText(String.format("%d Followers", mArtist.followers.total));
 
         TextView genreView = (TextView) rootView.findViewById(R.id.textView_artist_genre);
-        genreView.setText(mArtist.genres.get(0));
+        if (mArtist.genres.size() > 0){
+            genreView.setText(mArtist.genres.get(0));
+        }
+
+        if (mArtist.images.size() > 0){
+            ImageView imageView = (ImageView) rootView.findViewById(R.id.imageView_artist_detail);
+            Picasso.with(getActivity()).load(mArtist.images.get(0).url).into(imageView);
+        }
 
         return rootView;
     }

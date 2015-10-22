@@ -3,17 +3,18 @@
             tools:context=".ArtistDetailFragment"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_artist_detail">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="#0eab0b">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/imageView_artist_detail"
             android:src="@drawable/ic_people_black_48dp"
@@ -24,30 +25,31 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="25dp"
-            android:layout_gravity="center_vertical">
+            android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
                 android:text="@string/artist_name_default"
-                android:id="@+id/textView_artist_name" />
+                android:id="@+id/textView_artist_name"
+                android:gravity="center_horizontal" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAppearance="@android:style/TextAppearance.Material.Subhead"
                 android:text="@string/artist_genre_list_default"
-                android:id="@+id/textView_artist_genre" />
+                android:id="@+id/textView_artist_genre"
+                android:gravity="center_horizontal" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAppearance="@android:style/TextAppearance.Material.Subhead"
                 android:text="@string/artist_followers_default"
-                android:id="@+id/textView_artist_follower_count" />
+                android:id="@+id/textView_artist_follower_count"
+                android:gravity="center_horizontal" />
         </LinearLayout>
 
     </LinearLayout>
