@@ -2,6 +2,7 @@ package com.travismosley.spotifytm;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -95,6 +97,19 @@ public class ArtistSearchFragment extends Fragment {
             }
         });
         Log.v(LOG_TAG, "Added search listener.");
+
+        // Add the artist click listener
+        searchResultView.setOnItemClickListener(new ListView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView parent, View view, int pos, long id) {
+                Artist artist = mSearchResultsAdapter.getItem(pos);
+                Intent intent = new Intent(getActivity(), ArtistDetailActivity.class);
+                intent.putExtra(getString(R.string.INTENT_EXTRA_ARTIST), artist);
+                Log.v(LOG_TAG, "Handled onItemClick: '" + artist.uri + "'.");
+                getActivity().startActivity(intent);
+            }
+        });
 
         Log.v(LOG_TAG, "Ran onCreateView");
         return searchView;

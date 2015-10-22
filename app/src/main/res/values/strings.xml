@@ -10,4 +10,7 @@
     <string name="artist_genre_list_default">Classic Rock, Rock</string>
     <string name="artist_followers_default">123215 Followers</string>
     <string name="album_name_default">A Momentary Lapse of Reason</string>
+    <string name="song_name_default">Learning To Fly</string>
+
+    <string name="INTENT_EXTRA_ARTIST">intent_extra_artist</string>
 </resources>

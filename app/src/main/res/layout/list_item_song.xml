@@ -25,9 +25,9 @@
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:textAppearance="?android:attr/textAppearanceMedium"
-                  android:text="@string/artist_name_default"
+                  android:text="@string/song_name_default"
                   android:id="@+id/list_item_song_name_textview"
-               android:gravity="left">
+               android:gravity="start">
            </TextView>
 
         <TextView
@@ -35,7 +35,8 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/album_name_default"
-            android:id="@+id/list_item_song_album_textview" />
+            android:id="@+id/list_item_song_album_textview"
+            android:gravity="start" />
     </LinearLayout>
 
 </LinearLayout>
