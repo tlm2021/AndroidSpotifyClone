@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:divider="#ff1373ff"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/list_item_album_imageview"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/search_result_artist_image_description"
+        android:padding="8dp"
+        android:src="@drawable/ic_people_black_48dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/list_item_album_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/album_name_default"
+            android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        <TextView
+            android:id="@+id/list_item_album_artist_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/artist_name_default"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+</LinearLayout>

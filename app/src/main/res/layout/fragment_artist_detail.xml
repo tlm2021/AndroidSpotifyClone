@@ -1,63 +1,64 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
-            tools:context=".ArtistDetailFragment"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    tools:context=".ArtistDetailFragment"
     tools:showIn="@layout/activity_artist_detail">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="#0eab0b">
+        android:background="#0eab0b"
+        android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/imageView_artist_detail"
-            android:src="@drawable/ic_people_black_48dp"
-            android:minWidth="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:minHeight="100dp"
-            android:padding="10dp" />
+            android:minWidth="100dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_people_black_48dp" />
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
 
             <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="@android:style/TextAppearance.Material.Title"
-                android:text="@string/artist_name_default"
                 android:id="@+id/textView_artist_name"
-                android:gravity="center_horizontal" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                android:text="@string/artist_genre_list_default"
+                android:gravity="center_horizontal"
+                android:text="@string/artist_name_default"
+                android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            <TextView
                 android:id="@+id/textView_artist_genre"
-                android:gravity="center_horizontal" />
-
-            <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                android:text="@string/artist_followers_default"
+                android:gravity="center_horizontal"
+                android:text="@string/artist_genre_list_default"
+                android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
+
+            <TextView
                 android:id="@+id/textView_artist_follower_count"
-                android:gravity="center_horizontal" />
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/artist_followers_default"
+                android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
         </LinearLayout>
 
     </LinearLayout>
 
     <ListView
+        android:id="@+id/listView_albums"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

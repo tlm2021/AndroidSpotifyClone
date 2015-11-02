@@ -32,7 +32,9 @@ proguard/
 # Android Studio captures folder
 captures/
 
-# Some config. Maybe should/maybe shouldn't?
+# Some config
 .idea/
+*.iml
 
+# OSX
 .DS_Store
